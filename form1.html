@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Document</title>
+<style>
+	label{
+		display: block;
+		padding: 9px;
+	}
+	body{
+		text-align: center;
+		background-color: blue;
+	}
+	form{
+		background-color: yellow;
+		margin-right: 310px;
+		margin-left: 310px;
+		margin-top: 80px;
+		margin-bottom: 50px;
+		border-radius: 10%;
+	}
+	.btn{
+		padding: 20px;
+	}
+	input[type=submit]{
+		background-color: grey;
+	}
+	input[type=submit]:hover{
+		background-color: green;
+		cursor: pointer;
+	}
+</style>
+</head>
+<body>
+<form>
+	<center>
+		<h2>Registration From</h2>
+		<div class="container">
+			<label for="name">NAME</label>
+			<input type="text" name="name" required>
+			<label for="email">EMAIL</label>
+			<input type="email" name="email" required>
+			<label for="password">PASSWORD</label>
+			<input type="password" name="password" required>
+			<label for="phonenumber">PHONENUMBER</label>
+			<input type="tel" name="phonenumber" required>
+			<label for="gender">GENDER</label>
+			<select id="gender">
+				<option value="male" name="male">MALE</option>
+				<option value="female" name="female">FEMALE</option>
+				<option value="others" name="others">OTHERS</option>
+			</select>
+			<label for="zipcode">ZIPCODE</label>
+			<input type="text" name="text" required>
+			<label for="about">ABOUT</label>
+			<input type="textarea" name="textarea" required>
+			<div class="btn">
+				<input type="submit" value="register"></div>
+
+			 </div>
+			</center>
+		
+</form>
+	
+			
+
+</body>
+</html>
