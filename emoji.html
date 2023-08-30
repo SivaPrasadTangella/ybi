@@ -6,11 +6,13 @@
 		.container{
 			justify-content: center;
 			display: flex;
+			transform: translate(50px);
+
 		}
 		.face{
 			height: 150px;
 			width: 150px;
-			background-color: yellow;
+			background-color:yellow;
 			border-radius: 100px;
 			margin-top: 100px;
 			position: relative;
@@ -20,40 +22,67 @@
 		.eye1{
 			height: 30px;
 			width: 20px;
-			background-color: black;
+			background-color:blue;
 			border-radius: 50px;
 			margin-top: 50px;
 			margin-left: 30px;
 			position: absolute;
 		}
 		.eye2{
-			height: 30px;
+			height: 4px;
 			width: 20px;
-			background-color: black;
+			background-color:black;
 			border-radius: 50px;
-			margin-top: 50px;
+			margin-top: 60px;
 			margin-left: 100px;
 			position: absolute;
 
 		}
-		.mouth{
-			background-color: brown;
-		 	height: 30px;
-		 	width: 30px;
-		 	margin-left: 60px;
-		 	margin-top: 90px;
-		 	border-radius: 100% 100% 10% 10px;
-		 	border-bottom-left-radius:  100px;
-		 	border-bottom-right-radius: 100px;
+		.tears{
+			height: 20px;
+			width: 20px;
+			background-color: whitesmoke;
+			border-radius: 100px;
+			transform: rotate(50);
 		}
+		.mouth{
+			background-color: black;
+		 	height: 20px;
+		 	width: 50px;
+		 	margin-left: 50px;
+		 	margin-top: 90px;
+		 	border-radius: 50px;
+		}
+		.toung{
+			background-color: red;
+			height:40px;
+			width: 30px;
+			margin-left:10px;
+			margin-bottom:40px;
+			border-radius: 0px 0px 10px 0px;
+
+		}
+		h1{
+			text-align: center;
+			
+		}
+		
+		
 	</style>
 </head>
-<body>
+<body bgcolor="black">
+		<h1 style="color: white">Emoji</h1>
 	<div class="container">
         <div class="face"> 
-            <div class="eye1"></div>
-            <div class="eye2"></div>
-            <div class="mouth"></div>
+            <div class="eye1">
+            	<div class="tears"></div>
+            </div>
+            <div class="eye2">
+            	
+            </div>
+            
+            <div class="mouth"><div class="toung"></div></div>
+         	
         </div>
     </div>
 
