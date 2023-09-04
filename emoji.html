@@ -6,7 +6,8 @@
 		.container{
 			justify-content: center;
 			display: flex;
-			transform: translate(50px);
+			transition: width 2s;
+
 
 		}
 		.face{
@@ -41,16 +42,15 @@
 		.tears{
 			height: 20px;
 			width: 20px;
-			background-color: whitesmoke;
+			background-color: white;
 			border-radius: 100px;
-			transform: rotate(50);
 		}
 		.mouth{
 			background-color: black;
 		 	height: 20px;
 		 	width: 50px;
 		 	margin-left: 50px;
-		 	margin-top: 90px;
+		 	margin-top: 80px;
 		 	border-radius: 50px;
 		}
 		.toung{
@@ -58,20 +58,34 @@
 			height:40px;
 			width: 30px;
 			margin-left:10px;
-			margin-bottom:40px;
-			border-radius: 0px 0px 10px 0px;
+			margin-bottom:50px;
+			border-radius: 100%;
+			
 
 		}
-		h1{
-			text-align: center;
-			
+		.toung:hover{
+			transform: rotate(80deg);
+			transition: height 1s;
+			height: 20px;
 		}
-		
+		.face{
+			transition: rotate(30deg);
+			transition-property: width;
+			transition-duration: 5s;
+		}
+		.face:hover{
+			width: 30px;
+		}
+
+				
 		
 	</style>
 </head>
 <body bgcolor="black">
-		<h1 style="color: white">Emoji</h1>
+	<center>
+		<h2 style="color: blue">emoji</h2>
+	</center>
+	
 	<div class="container">
         <div class="face"> 
             <div class="eye1">
@@ -85,6 +99,7 @@
          	
         </div>
     </div>
+    
 
 </body>
 </html>
