@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>emoji</title>
+	<style type="text/css">
+		.container{
+			justify-content: center;
+			display: flex;
+			transition: width 2s;
+
+
+		}
+		.face{
+			height: 150px;
+			width: 150px;
+			background-color:yellow;
+			border-radius: 100px;
+			margin-top: 100px;
+			position: relative;
+
+
+		}
+		.eye1{
+			height: 30px;
+			width: 20px;
+			background-color:blue;
+			border-radius: 50px;
+			margin-top: 50px;
+			margin-left: 30px;
+			position: absolute;
+		}
+		.eye2{
+			height: 4px;
+			width: 20px;
+			background-color:black;
+			border-radius: 50px;
+			margin-top: 60px;
+			margin-left: 100px;
+			position: absolute;
+
+		}
+		.tears{
+			height: 20px;
+			width: 20px;
+			background-color: white;
+			border-radius: 100px;
+		}
+		.mouth{
+			background-color: black;
+		 	height: 20px;
+		 	width: 50px;
+		 	margin-left: 50px;
+		 	margin-top: 80px;
+		 	border-radius: 50px;
+		}
+		.toung{
+			background-color: red;
+			height:40px;
+			width: 30px;
+			margin-left:10px;
+			margin-bottom:50px;
+			border-radius: 100%;
+			
+
+		}
+		.toung:hover{
+			transform: rotate(80deg);
+			transition: height 1s;
+			height: 20px;
+		}
+		.face{
+			transition: rotate(30deg);
+			transition-property: width;
+			transition-duration: 5s;
+		}
+		.face:hover{
+			width: 30px;
+		}
+
+				
+		
+	</style>
+</head>
+<body bgcolor="black">
+	<center>
+		<h2 style="color: blue">emoji</h2>
+	</center>
+	
+	<div class="container">
+        <div class="face"> 
+            <div class="eye1">
+            	<div class="tears"></div>
+            </div>
+            <div class="eye2">
+            	
+            </div>
+            
+            <div class="mouth"><div class="toung"></div></div>
+         	
+        </div>
+    </div>
+    
+
+</body>
+</html>
